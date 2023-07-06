@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dnazarenoS5.insertar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="insertar estudiantes" FontSize="20" HorizontalTextAlignment="Center" />
+            <Entry x:Name="txtcodigo" Placeholder="ingrese el codigo" Keyboard="Numeric"/>
+            <Entry x:Name="txtNombre" Placeholder="ingrese el nombre"/>
+            <Entry x:Name="txtApellido" Placeholder="ingrese el apellido"/>
+            <Entry x:Name="txtEdad" Placeholder="ingrese la edad"/>
+            <Button x:Name="btnInsertar" Text="INSERTAR" Clicked="btnInsertar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
