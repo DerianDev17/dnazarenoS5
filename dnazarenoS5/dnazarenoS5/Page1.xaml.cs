@@ -16,7 +16,7 @@ namespace dnazarenoS5
     public partial class Page1 : ContentPage
     {
 
-        private const string Url = "http://10.2.13.197/ws_uisrael/post.php";
+        private const string Url = "http://192.168.200.142/ws_uisrael/post.php";
         private HttpClient cliente = new HttpClient();
         private ObservableCollection<dnazarenoS5.Datos> datos;
         public Page1()

@@ -24,7 +24,7 @@ namespace dnazarenoS5
 			{
 				WebClient cliente = new WebClient ();
 
-				string url = "http://10.2.13.197/ws_uisrael/post.php";
+				string url = "http://192.168.200.142/ws_uisrael/post.php";
 				var parametros = new System.Collections.Specialized.NameValueCollection();
 
 				parametros.Add("codigo", txtcodigo.Text);

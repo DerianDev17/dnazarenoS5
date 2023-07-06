@@ -23,10 +23,13 @@
                     <ColumnDefinition/>
 
                 </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked" Grid.Row="0" Grid.Column="0" />
+                <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked"  Grid.Row="0" Grid.Column="1" />
+
             </Grid>
-            <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked" Grid.Row="0" Grid.Column="0" />
-            <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked"  Grid.Row="0" Grid.Column="1" />
-            <Button/>
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

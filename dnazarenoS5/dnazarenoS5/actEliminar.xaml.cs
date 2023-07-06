@@ -29,7 +29,7 @@ namespace dnazarenoS5
             {
                 WebClient cliente = new WebClient();
 
-                string URL = "http://10.2.13.197/ws_uisrael/post.php";
+                string URL = "http://192.168.200.142/ws_uisrael/post.php";
 
                 string codigo = txtcodigo.Text;
                 string nombre = txtNombre.Text;
@@ -40,13 +40,13 @@ namespace dnazarenoS5
 
                 var parametros = new System.Collections.Specialized.NameValueCollection();
 
-
                 parametros.Add("codigo", txtcodigo.Text);
                 parametros.Add("nombre", txtNombre.Text);
                 parametros.Add("apellido", txtApellido.Text);
                 parametros.Add("edad", txtEdad.Text);
 
                 cliente.UploadValues(url, "PUT", parametros);
+
                 // mensaje toast
                 var mensaje = "dato actualizado";
                 DependencyService.Get<mensaje>().LongAlert(mensaje);
@@ -64,7 +64,7 @@ namespace dnazarenoS5
             {
                 WebClient cliente = new WebClient();
 
-                string URL = "http://10.2.13.197/ws_uisrael/post.php";
+                string URL = "http://192.168.200.142/ws_uisrael/post.php";
 
                 string codigo = txtcodigo.Text;
                 string nombre = txtNombre.Text;
@@ -78,6 +78,7 @@ namespace dnazarenoS5
                 parametros.Add("codigo", txtcodigo.Text);
 
                 cliente.UploadValues(url, "DELETE", parametros);
+
                 // mensaje toast
                 var mensaje = "dato eliminado";
                 DependencyService.Get<mensaje>().LongAlert(mensaje);
